@@ -1,0 +1,119 @@
+body {
+  color: #5a5a5a;
+}
+
+.preloader-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #292b2c;
+  padding: 0;
+  opacity: 1;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.preloader-squares .square {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #949595;
+  opacity: 0.6;
+  animation: movein 2s infinite;
+}
+
+.preloader-squares {
+  width: 60px;
+  line-height: 10px;
+  height: 60px;
+}
+
+.square {
+  opacity: 0.6;
+}
+
+.preloader-squares .square:nth-child(1) {
+  transform: translate(0, -50px)
+}
+
+.preloader-squares .square:nth-child(2) {
+  transform: translate(50px, 0)
+}
+
+.preloader-squares .square:nth-child(3) {
+  transform: translate(-50px, 0)
+}
+
+.preloader-squares .square:nth-child(4) {
+  transform: translate(0, 50px)
+}
+
+@keyframes movein {
+  33% {
+    transform: translate(0, 0);
+    opacity: 0.9;
+  }
+  66% {
+    transform: translate(0, 0);
+    opacity: 0.9;
+  }
+}
+
+.fixed-top {
+  height: 55px;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  position: absolute;
+}
+
+span.nav-link {
+  cursor: pointer;
+}
+
+.newsBlock {
+  position: relative;
+  margin-top: 55px;
+}
+
+.newsView {
+  float: left;
+  width: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: .5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: solid 2px #2D3E4F;
+}
+
+.newsView:last-child {
+  margin-bottom: 7rem;
+}
+
+a.newsLink {
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.date-news{
+  position: relative;
+  float: right;
+}
+
+.pageNav {
+  nav {
+    position: fixed;
+    bottom: 1.5rem;
+  }
+}
